@@ -1,6 +1,5 @@
 const express = require("express");
 const Store = require("../models/store");
-const { NotFoundError } = require("../utils/errors");
 const router = express.Router();
 
 // list all products
