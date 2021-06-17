@@ -17,6 +17,12 @@
       "source": "https://world.openfoodfacts.org/cgi/product_image.pl?code=8964000090879&id=front_en",
       "description": "No one knows what's in the powder that covers these snacks, but wow is it amazing!",
       "price": 1.5
+    },
+    {
+      "id": 3,
+      "email": "asdasd@gmail.com",
+      "product": "Rice Krispies",
+      "quantity": 2
     }
   ]
 }
