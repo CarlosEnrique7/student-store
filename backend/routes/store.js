@@ -3,7 +3,7 @@ const Store = require("../models/store");
 const { NotFoundError } = require("../utils/errors");
 const router = express.Router();
 
-// list all transactions
+// list all products
 router.get("/", async (req, res, next) => {
   try {
     const products = await Store.listProducts();
@@ -13,7 +13,29 @@ router.get("/", async (req, res, next) => {
   }
 });
 
-// // create new order
+// create new product
+router.post("/", async (req, res, next) => {
+  try {
+    console.log(req.body);
+    const product = req.body.products;
+    const newProduct = await Store.sendProduct(product);
+    res.json({ products: newProduct });
+  } catch (err) {
+    next(err);
+  }
+});
+
+// list all orders
+router.get("/orders", async (req, res, next) => {
+  try {
+    const orders = await Store.listOrders();
+    res.json({ orders });
+  } catch (err) {
+    next(err);
+  }
+});
+
+// create new order
 router.post("/orders", async (req, res, next) => {
   try {
     console.log(req.body);
