@@ -82,3 +82,15 @@
   display: flex;
   justify-content: space-between;
 }
+
+.total {
+  color: aquamarine;
+  width: 80%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.invis {
+  display: none;
+}

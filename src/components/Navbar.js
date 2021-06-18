@@ -1,6 +1,5 @@
 import "./Navbar.css";
 import { useState } from "react";
-import Cart from "./Cart";
 
 const Navbar = ({ cart }) => {
   const [isOpen, setOpen] = useState(false);
@@ -8,6 +7,8 @@ const Navbar = ({ cart }) => {
   const sidebarAction = () => {
     setOpen(!isOpen);
   };
+
+  let total = 0;
 
   return (
     <div className={isOpen ? "nav open" : "nav closed"}>
@@ -30,8 +31,12 @@ const Navbar = ({ cart }) => {
               <div className="cartList">
                 <p>{item.name}</p>
                 <p>{item.price}</p>
+                <p className="invis">{(total += item.price)}</p>
               </div>
             ))}
+            <p className="total">
+              Total: <span>{parseFloat(total).toFixed(2)}</span>
+            </p>
             {/* <form action="/orders" method="POST">
               <label htmlFor="email">Email</label>
               <input type="email" placeholder="email@email.com" />
