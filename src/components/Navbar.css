@@ -74,3 +74,11 @@
 .left-arrow {
   margin-left: 10px;
 }
+
+.cartList {
+  margin-top: 20px;
+  color: white;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}

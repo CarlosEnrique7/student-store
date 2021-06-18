@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-const ItemInfo = () => {
+const ItemInfo = ({ handleCart }) => {
   const { productId } = useParams();
   const [product, setProduct] = useState({});
   console.log("id", productId);
@@ -36,6 +36,7 @@ const ItemInfo = () => {
           <img src={product.image} alt="" />
           <h1 className="title">{product.title}</h1>
           <p class="description">{product.description}</p>
+          <button onClick={() => handleCart(product)}>Add to Cart</button>
         </div>
       </div>
     </div>

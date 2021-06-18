@@ -25,15 +25,24 @@ function App() {
   }, []);
   console.log("app", store);
 
+  const [cart, setCart] = useState([]);
+
+  const handleAddCart = (product) => {
+    setCart([...cart, product]);
+  };
+  console.log("cart ", cart);
+  // pass cart to navbar and then to cart
+  // handleCart pass down to inv items to change state
+
   return (
     <div className="App">
-      <Navbar />
+      <Navbar cart={cart} />
       <div className="main">
         <BrowserRouter>
           <Banner />
           <Routes>
             <Route path="/" element={<Products store={store} />} />
-            <Route path="/:productId" element={<ItemInfo />} />
+            <Route path="/:productId" element={<ItemInfo handleCart={handleAddCart} />} />
           </Routes>
         </BrowserRouter>
       </div>

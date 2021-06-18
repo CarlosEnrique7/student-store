@@ -1,8 +1,7 @@
 import React from "react";
 import "./items.css";
-import { Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ItemCard from "./ItemCard";
-import ItemInfo from "./ItemInfo";
 
 const Items = ({ store }) => {
   return (

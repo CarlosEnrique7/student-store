@@ -1,7 +1,8 @@
 import "./Navbar.css";
 import { useState } from "react";
+import Cart from "./Cart";
 
-const Navbar = () => {
+const Navbar = ({ cart }) => {
   const [isOpen, setOpen] = useState(false);
 
   const sidebarAction = () => {
@@ -25,6 +26,16 @@ const Navbar = () => {
             <h2 className="shoppingTitle">
               Shopping Cart <i className="fas fa-shopping-cart"></i>
             </h2>
+            {cart.map((item) => (
+              <div className="cartList">
+                <p>{item.name}</p>
+                <p>{item.price}</p>
+              </div>
+            ))}
+            {/* <form action="/orders" method="POST">
+              <label htmlFor="email">Email</label>
+              <input type="email" placeholder="email@email.com" />
+            </form> */}
           </div>
         )}
       </div>
