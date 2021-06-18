@@ -31,6 +31,7 @@ function App() {
     setCart([...cart, product]);
   };
   console.log("cart ", cart);
+
   // pass cart to navbar and then to cart
   // handleCart pass down to inv items to change state
 

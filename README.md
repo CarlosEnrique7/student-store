@@ -28,10 +28,10 @@ Deployed Application (optional): [Student Store Deployed Site]()
 
 `TODO://` Add the embedded URL code to your animated app walkthrough below, `ADD_EMBEDDED_CODE_HERE`. Make sure the video or gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after adding walkthrough video)
 
-Link: https://i.imgur.com/9STwbH9.mp4
+Link: https://i.imgur.com/ebzSFD8.mp4
 
 <br>
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/njQszHz" data-context="false" ><a href="//imgur.com/a/njQszHz"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/B7ZKHZj"  ><a href="//imgur.com/a/B7ZKHZj">Student Store CodePath Project</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 ### Reflection
 
