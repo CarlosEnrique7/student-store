@@ -1,6 +1,7 @@
 const express = require("express");
 const Store = require("../models/store");
 const router = express.Router();
+const { NotFoundError } = require("../utils/errors");
 
 // list all products
 router.get("/", async (req, res, next) => {
@@ -19,6 +20,20 @@ router.post("/", async (req, res, next) => {
     const product = req.body.products;
     const newProduct = await Store.sendProduct(product);
     res.json({ products: newProduct });
+  } catch (err) {
+    next(err);
+  }
+});
+
+// get single item
+router.get("/:productId", async (req, res, next) => {
+  try {
+    const productId = req.params.productId;
+    const product = await Store.fetchProductById(productId);
+    if (!product) {
+      throw new NotFoundError("Product not found");
+    }
+    res.json({ product });
   } catch (err) {
     next(err);
   }

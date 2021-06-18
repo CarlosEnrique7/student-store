@@ -59,6 +59,15 @@ class Store {
 
     return newProduct;
   }
+
+  static async fetchProductById(productId) {
+    // fetch a single product
+    const product = storage
+      .get("products")
+      .find({ id: Number(productId) })
+      .value();
+    return product;
+  }
 }
 
 module.exports = Store;
