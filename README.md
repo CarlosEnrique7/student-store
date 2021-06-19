@@ -27,9 +27,14 @@ Deployed Application (optional): [Student Store Deployed Site]()
 ### Walkthrough Video
 
 Link: https://i.imgur.com/ebzSFD8.mp4
-
 <br>
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/B7ZKHZj"  ><a href="//imgur.com/a/B7ZKHZj">Student Store CodePath Project</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<br>
+
+Insomnia Walkthough: https://i.imgur.com/HORNEL7.mp4
+<br>
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/UXTXRb2"  ><a href="//imgur.com/a/UXTXRb2">Insomnia Get and Post request to backend</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<br>
 
 ### Reflection
 
